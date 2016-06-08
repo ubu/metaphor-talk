@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>I Never Metaphor I Didn't Like</title>
+		<meta name="author" content="Kip Hampton">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+    <style>
+.sticky-title {
+    top: 0px;
+}
+
+p.lefty {
+    text-align: left !important;
+}
+
+dl {
+    text-align: left;
+
+}
+
+dt, th {
+    font-family: "League Gothic", Impact, sans-serif !important;
+    text-transform: uppercase;
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+}
+
+dd {
+    margin-left: 20px !important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+table.propmap td:nth-child(2), table.propmap th  {
+    white-space: nowrap;
+}
+
+    </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="assets/images/charlotte.jpg">
+				<div style="background: rgba(0,0,0,.4); padding-top: 50px;">
+					<h2>I Never Metaphor I Didn't Like</h2>
+					<h3>How Cognitive Linguistics Can Help You Be A (More) Bad-ass Developer</h3>
+                    <h4>SouthEast LinuxFest 2016 -- Charlotte, NC</h4>
+					<p><b>Chris Prather</b> CEO, Tamarou (<a href="http://twitter.com/perigrin">@perigrin</a>)</p>
+					<p><b>Kip Hampton</b> Senior Architect, Tamarou (<a href="http://twitter.com/kiphampton">@kiphampton</a>)</p>
+					</div>
+				</section>
+
+				<section data-background="assets/images/lone-tree.jpg">
+
+				<blockquote style="background: rgba(0,0,0,.4);">
+                <p>
+				 &ldquo;I think that I shall never see...
+                </p>
+                <div class="fragment">
+                <p>
+                A poem as lovely as a directed acyclic graph.&rdquo;
+                </p>
+                <div style="right: 2px; text-align: right;">
+                <p style="font-size: .7em">
+                --Joyce Kilmer, Trees (not really)
+                </p>
+                </div>
+                </div>
+				</blockquote>
+				</section>
+
+				<section>
+					<h2 class="sticky-title">Metaphor Basics</h2>
+                    <ul>
+                        <li class="fragment">More than poetic or flowery language.</li>
+                        <li class="fragment">A core feature of cognition.</li>
+                        <li class="fragment">Enables us to think and communicate about things for which we have no direct bodily experience.</li>
+                        <li class="fragment">Broadly comprised of three parts:
+                            <ol>
+                                <li>Conceptual blends.</li>
+                                <li>Compression.</li>
+                                <li>Semantic Frames.</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+				</section>
+				<section>
+                    <h2>Conceptual Blends</h2>
+					<table>
+					<tbody>
+					<tr>
+					<td style="vertical-align: top; width: 399px; height: 358px;">
+					<img style="width: 399px; height: 358px; background-color: red; padding: 10px;" src="assets/images/blend.png">
+					</td>
+					<td style="vertical-align: middle;">
+					<ul style="font-size: .8em">
+					    <ul>
+					    <li class="fragment">
+					    <h4>Input Spaces</h4>
+					    <p>Two (or more) mental spaces being compared.</p>
+					    </li>
+					    <li class="fragment">
+					    <h4>Generic Space</h4>
+					    <p>Space representing the common aspects of the input spaces.</p>
+					    </li>
+					    <li class="fragment">
+					    <h4>Blended Space</h4>
+					    <p>Space where the input spaces are synthesized and compared.</p>
+					    </li>
+					    </ul>
+
+					</ul>
+					</td>
+					</tr>
+					<tr class="fragment">
+					<td colspan="2">Blended spaces compress inputs in order bring ideas to &ldquo;human scale&rdquo;.
+					</td>
+					</tr>
+
+					</tbody>
+					</table>
+				</section>
+				<section>
+                    <h2>Compression</h2>
+                    <ul>
+                    <li class="fragment">A blended space is created when two or more input spaces are compressed together.</li>
+                    <li class="fragment">These compressions happen when aspects of the input spaces are fused.</li>
+                    <li class="fragment">These fusible mappings are called &ldquo;vital relations&rdquo;.
+                    <ul>
+                    <li>Identity</li>
+                    <li>Part–Whole</li>
+                    <li>Change</li>
+                    <li>Intentionality</li>
+                    <li>Uniqueness</li>
+                    <li><i>(many others)</i></li>
+                    </ul>
+                    </li>
+                    <li class="fragment">Metonymies make compressions obvious:
+                     <ul>
+                     <li>&ldquo;Washington and Moscow at odds on Ukraine&rdquo;</li>
+                     <li>&ldquo;Obama and Putin spar over gas pipeline.&rdquo;</li>
+                     </ul>
+                    </li>
+                    </ul>
+				</section>
+				<section>
+				    <h2>Dino Compression</h2>
+				    <!-- dd -->
+					<table>
+					<tbody>
+					<tr>
+					<td style="vertical-align: top; width: 500px; height: 400px;">
+					<img style="width: 600px; height: 480px;" src="assets/images/dino_compression.jpg">
+					</td>
+					<td style="vertical-align: middle;">
+					<ul>
+					    <li>Compressions:
+					    <ul>
+					    <li class="fragment">Identity further collapsed into Uniqueness (same animal)</li>
+					    <li class="fragment">Time (vast time scales reduced to a few steps)</li>
+					    </ul>
+					    </li>
+					    <li class="fragment">Millions of years of evolution, countless intermediate species, innumerable individuals, compressed to a story at human scale.</li>
+					</ul>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+
+				</section>
+				<section>
+                    <h2>Semantic Frames</h2>
+                    <ul>
+                    <li class="fragment">Blended spaces which hold what we know about a given domain.
+                        <ul>
+                            <li>Entities</li>
+                            <li>Relationships</li>
+                            <li>Actions</li>
+                            <li>Moral judgments, sensory-motor memories, emotional attachments.</li>
+                        </ul>
+
+                    </li>
+                    <li class="fragment">Closely related to categorization.</li>
+                    <li class="fragment">Constantly evolving based on new experiences.</li>
+                    </ul>
+				</section>
+				<section>
+				    <h3>Frame Examples</h3>
+				    <ul>
+				    <li class="fragment">
+				        <h4 class="lefty">A &ldquo;Meal&rdquo; Frame</h4>
+				        <ul class="lefty">
+				            <li>Food, plates, tables, utensils.</li>
+				            <li>Expected behaviors, &ldquo;table manners&rdquo;, serving order.</li>
+				        </ul>
+				    </li>
+				    <li class="fragment" style="margin-top: 30px;">
+				        <h4 class="lefty">A &ldquo;Commercial Transaction&rdquo; Frame</h4>
+				        <ul class="lefty">
+				            <li>A <b>Buyer</b> and a <b>Seller</b></li>
+				            <li>Money exchanged for goods/services.</li>
+				        </ul>
+                    </li>
+				    <li class="fragment" style="margin-top: 30px;">
+				        <h4 class="lefty">A &ldquo;Restaurant&rdquo; Frame</h4>
+				        <ul class="lefty">
+                            <li>A blended space which borrows from both the <b>Meal</b> and <b>Commercial Transaction</b> frames.</li>
+				            <li>Adds new aspects like serving staff, additional behavioral expectations like tipping, rules relating to shared social spaces, etc.</li>
+				        </ul>
+                    </li>
+                </ul>
+
+				</section>
+				<section>
+				<h2>Metaphor</h2>
+				<p class="lefty">When two domain frames are compressed into a blended space in which aspects of target domain are used to conceptualize the source domain.</p>
+                <p class="fragment"><i>(or, auf Anglish...)</i></p>
+                <p class="fragment lefty">When you use something you know deeply to get a handle on something you know less well (or that doesn't yet exist, is more abstract, etc).</p>
+
+				</section>
+				<section>
+                    <h2>Primary Metaphors</h2>
+                    <ul>
+                    <li class="fragment"><h4>MORE IS UP</h4>
+                    <p>&ldquo;Her popularity <em>soared</em>.&rdquo;</p>
+                    <p>&ldquo;Profits are <em>down</em> this quarter.&rdquo;</p>
+                    </li>
+                    <li class="fragment"><h4>WARMTH IS AFFECTION</h4>
+                    <p>&ldquo;They gave her a <em>warm</em> reception.&rdquo;</p>
+                    <p>&ldquo;He gave us the <em>cold</em> shoulder.&rdquo;</p>
+                    </li>
+                    <li class="fragment"><h4>KNOWING IS SEEING</h4>
+                    <p>&ldquo;I <em>see</em> what you're saying.&rdquo;</p>
+                    <p>&ldquo;The documentation is a little <em>opaque</em>.&rdquo;</p>
+                    </li>
+                    </ul>
+				</section>
+				<section>
+                    <h2>More Primary Metaphors</h2>
+                    <ul>
+                    <li><h4>Important is Big</h4></li>
+                    <li><h4>Happy Is Up</h4></li>
+                    <li><h4>Understanding Is Grasping</h4></li>
+                    <li><h4>Intimacy Is Closeness</h4></li>
+                    <li><h4>Difficulties Are Burdens</h4></li>
+                    <li><h4>Organization Is Physical Structure</h4></li>
+                    <li><h4>Time Is Motion</h4></li>
+                    <li><h4>Relationships Are Enclosures</h4></li>
+                    <li><h4>Categories Are Containers</h4></li>
+                    <li><i>(Many, many others...)</i></li>
+                    </ul>
+				</section>
+
+				<section data-background="assets/images/AristotleSmaller.png">
+				<blockquote style="background: rgba(0,0,0,.4);">
+                <p>
+				 &ldquo;The greatest thing by far is to be a master of metaphor.
+                </p>
+
+                <div>
+                <p>
+                It is the one thing that cannot be learned from others; it is also a sign of genius, since a good metaphor implies an eye for resemblance.&rdquo;
+                </p>
+                <div style="right: 2px; text-align: right;">
+                <p style="font-size: .7em">
+                --Aristotle, De Poetica, 322 B.C.
+                </p>
+                </div>
+                </div>
+				</blockquote>
+				</section>
+
+				<section>
+					<h2>Metaphor In Software Development</h2>
+				</section>
+				<section>
+				    <h2>User Interface/User Experience</h2>
+				    <ul>
+				        <li class="fragment">What most people think of when they think of metaphor in a computing context.</li>
+				        <li class="fragment">Iconography, desktops, windows, and trashcans are, like poetry, only the most visible use of metaphor.</li>
+				        <li class="fragment">The UNIX command-line filesystem interface depends deeply on primary metaphors of containment and locality.</li>
+				        <li class="fragment">GUI metaphors go wrong when their conceptual blends contain elements that do no meaningful compression.
+				        <aside>
+				        <p class="fragment"><i>Laying out a calendar app like a day planner is a good compression</i></p>
+				        <p class="fragment"><i>...giving it a leather cover is not.</i></p>
+				    </aside>
+				        </li>
+				    </ul>
+				</section>
+				<section>
+					<h2>Project Management</h2>
+					<p class="lefty">The language and underlying concepts of project management are an ode to one primary metaphor:</p>
+					<ul>
+					<li class="fragment"><h4>A TASK IS A JOURNEY</h4>
+					<ul>
+					<li>&ldquo;We are making good <em>progress</em>.&rdquo;</li>
+					<li>&ldquo;We just <em>made it to</em> our latest <em>milestone</em>.&rdquo;</li>
+					<li>&ldquo;I hit a major <em>roadblock</em> in the database code.&rdquo;</li>
+					<li>&ldquo;We need to get things back <em>on track</em>.&rdquo;</li>
+					</ul>
+					</li>
+					<li class="fragment">Agile Programming, especially (Sprint, Bottleneck, Impediment, etc)</li>
+					</ul>
+				</section>
+                <section>
+                    <h2>Application Architecture/API Design</h2>
+                    <ul>
+                        <li class="fragment">Most work is analogical (&ldquo;automate this business process&rdquo;).</li>
+                        <li class="fragment">Even when mimicking an existing process, thinking metaphorically can expand your frame of reference beyond data and transactions.</li>
+                        <li class="fragment">Metaphoric analysis especially helpful when breaking new ground.</li>
+                        <li class="fragment">Stand back from the problem and ask, &ldquo;what is this <i>like</i>&rdquo;.</li>
+                    </ul>
+                </section>
+				<section>
+					<h2>Case Study: Oakley</h2>
+					<ul>
+					    <li class="fragment"><h4>The Problem:</h4>
+					    <ul>
+					        <li class="fragment">Nearly 100 regional offices, worldwide.</li>
+					        <li class="fragment">Each office had its own procedures for collecting and storing customer contact information.</li>
+					        <li class="fragment">Corporate HQ wanted a normalized, dependable contact list for all registered customers.</li>
+					    </ul>
+					    </li>
+					    <li class="fragment"><h4>The Solution:</h4>
+					    <ul>
+					        <li class="fragment">Consternation.</li>
+					        <li class="fragment">Panic.</li>
+					        <li class="fragment">Frustration.</li>
+					        <li class="fragment"><i>&ldquo;I might as well be panning for freakin' gold...&rdquo;</i></li>
+					    </ul>
+					    </li>
+					</ul>
+				</section>
+                <section data-background="assets/images/eureka.jpg">
+				<blockquote style="background: rgba(0,0,0,.4);">
+                <p style="font-size: larger;">
+				 &ldquo;Hmm, you know, this <b style="color: red;">is</b> sorta like panning for gold...&rdquo;
+				 </p>
+				</blockquote>
+                </section>
+                <section>
+				    <h2>Cognitive Context</h2>
+				    <!-- dd -->
+					<table>
+					<tbody>
+					<tr class="fragment">
+					<td style="vertical-align: top;">
+					<img src="assets/images/wfdt.jpg">
+					</td>
+					<td style="vertical-align: middle;">
+                    <ul>
+                    <li>Had recently read George Lakoff's <i>Women, Fire, and Dangerous Things</i>.</li>
+                    <li>Introduces many ideas behind this talk.</li>
+                    <li>Ideas further explored in <i>Metaphors We Live By</i>.</li>
+                    </ul>
+					</td>
+					</tr>
+					<tr class="fragment">
+					<td style="vertical-align: top;">
+					<img src="assets/images/sierra_madre.jpg">
+					</td>
+					<td style="vertical-align: middle;">
+                    <ul>
+                    <li>Had recently seen John Huston's <i>The Treasure of the Sierra Madre</i>.</li>
+                    <li>A tale of greed and danger among miners prospecting for gold in the Mexican mountains.</li>
+                    <li>Lots of montages of mining work.</li>
+                    </ul>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+                </section>
+                <section>
+                    <h3>&ldquo;Data Mining&rdquo;</h3>
+                    <table class="propmap">
+                    <thead>
+                    <tr>
+                    <th>Placer Mining</th>
+                    <th>&nbsp;</th>
+                    <th>Customer Data Aggregation</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="fragment">
+                    <td>Diggers</td>
+                    <td>--></td>
+                    <td>Scripts to pull customer data from individual offices.</td>
+                    </tr>
+                    <tr class="fragment">
+                    <td>Hopper</td>
+                    <td>--></td>
+                    <td>Local storage for raw records.</td>
+                    </tr>
+                    <tr class="fragment">
+                    <td>Sluice</td>
+                    <td>--></td>
+                    <td>Event-driven record processing pipeline.</td>
+                    </tr>
+                    <tr class="fragment">
+                    <td>Screens/Riffles</td>
+                    <td>--></td>
+                    <td>Various filters to clean up/throw out erroneous records.</td>
+                    </tr>
+                    <tr class="fragment">
+                    <td>Assay</td>
+                    <td>--></td>
+                    <td>Validation and normalization of filtered records via 3rd party.</td>
+                    </tr>
+                    <tr class="fragment">
+                    <td>Vault</td>
+                    <td>--></td>
+                    <td>Database storage for known-good records.</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h2>Lessons</h2>
+                    <ul>
+                    <li class="fragment">Metaphor is imprecise (but that's okay!)</li>
+                    <li class="fragment">Gave us an easy way to get our arms around a complex problem.</li>
+                    <li class="fragment">Gave us ready-made application structure.
+                    <ul>
+                    <li>System workflow.</li>
+                    <li>Entity names.</li>
+                    <li>Class hierarchy.</li>
+                    </ul>
+                    </li>
+                    <li class="fragment">In short, applying a solution from one domain frame to a problem in a less well known domain brought the problem down to human scale, made us more productive.</li>
+                    </ul>
+                </section>
+                <!--
+				<section>
+					<h2>Case Study: RESTBux</h2>
+				</section>
+                -->
+				<section>
+					<h2>Tips, Tricks, and Hacks</h2>
+					<ul>
+					<li class="fragment">Remember that you are already constantly using metaphoric reasoning, even when it's not obvious or intentional.</li>
+					<li class="fragment">Set time aside to let your mind wander about the problem.</li>
+					<li class="fragment">Dont't try to force it. Associative reasoning isn't susceptible to grit-your-teeth-and-get-er-done.</li>
+					<li class="fragment">If you get stuck, try looking for vital relations. (&ldquo;This has an $x, what else has an $x?&rdquo;)</li>
+					<li class="fragment">Indulge your curiosity. You never know what obscure corner an "AHA!" might jump out from.</li>
+					<li class="fragment">Puns, puns, and moar puns. They help keep your blending faculties quick and supple.</li>
+					<li class="fragment">You can't unsee this talk. Expect to start seeing metaphoric language <em>everywhere</em>. <span class="fragment">[insert evil laugh]</span></li>
+					</ul>
+				</section>
+                <section>
+                <h1>Questions?</h1>
+                </section>
+
+				<section>
+					<h1>Thank You!</h1>
+					<p><b>Chris Prather</b> (<a href="http://twitter.com/perigrin">@perigrin</a>)</p>
+					<p><b>Kip Hampton</b> (<a href="http://twitter.com/kiphampton">@kiphampton</a>)</p>
+					<p>
+					<a href="http://tamarou.com/">http://tamarou.com</a>
+					</p>
+					<p style="margin-top: 30px;"><em>Don't forget to fill out your speaker evaluation!</em></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
